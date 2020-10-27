@@ -15,7 +15,11 @@
 
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation__button">menu</label>
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
 
         <div class="navigation__background">&nbsp;</div>
         <nav class="navigation__nav">
@@ -28,25 +32,25 @@
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
-                        <span>01</span>
+                        <span>02</span>
                         Your benefits
                     </a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
-                        <span>01</span>
+                        <span>03</span>
                         Popular tours
                     </a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
-                        <span>01</span>
+                        <span>04</span>
                         Stories
                     </a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
-                        <span>01</span>
+                        <span>05</span>
                         Book now
                     </a>
                 </li>
@@ -150,7 +154,7 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -183,7 +187,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -213,7 +217,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -243,7 +247,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$897</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book now!</a>
+                                <a href="#popup" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -407,6 +411,36 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img class="popup__img" src="img/nat-8.jpg" alt="tour photo">
+                <img class="popup__img" src="img/nat-9.jpg" alt="tour photo">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking </h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam possimus quos inventore atque non
+                    nesciunt distinctio velit, odio quasi nulla aperiam odit aliquam consequatur blanditiis, obcaecati
+                    iusto aliquid quo rem totam officia omnis laborum? Nam minima atque totam aut modi vitae nemo
+                    delectus velit necessitatibus facilis at error, dolorum magni itaque. Consectetur soluta deleniti
+                    explicabo distinctio aliquam repellendus quaerat repellat optio? Dolorum culpa libero tempora
+                    cupiditate nisi cumque veritatis quas voluptas molestias obcaecati, quia maiores consequuntur neque
+                    accusantium modi consequatur harum? Illum, assumenda. Mollitia cum beatae, consequatur sit harum
+                    iure sed, ipsam cumque exercitationem consequuntur labore voluptatem doloribus adipisci illo facilis
+                    nulla, iste ratione? Assumenda, deserunt mollitia. Libero nobis impedit ipsam dolorem tenetur?
+                    Veritatis, ut repellat iusto excepturi atque accusamus natus omnis dolorem quo ea fugit autem
+                    exercitationem, laboriosam modi, cum repellendus vel dignissimos aut nam? Cum facilis, ea magnam
+                    possimus quos voluptatem ducimus, dolorem vitae inventore asperiores fuga nam.
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -25,21 +25,21 @@
 
       &-1 {
         background-image: linear-gradient(
-          to right bottom,
+          to left bottom,
           $color-secondary-light,
           $color-secondary-dark
         );
       }
       &-2 {
         background-image: linear-gradient(
-          to right bottom,
+          to left bottom,
           $color-primary-light,
           $color-primary-dark
         );
       }
       &-3 {
         background-image: linear-gradient(
-          to right bottom,
+          to left bottom,
           $color-tertiary-light,
           $color-tertiary-dark
         );
