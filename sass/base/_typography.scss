@@ -2,7 +2,6 @@ body {
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 1.7;
-  padding: 3rem;
   color: $color-grey-dark;
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
@@ -13,12 +12,22 @@ body {
   text-transform: uppercase;
   margin-bottom: 6rem;
 
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
   &--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
     animation: moveInLeft 1s ease-out;
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
   &--sub {
     display: block;
@@ -26,6 +35,9 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 .heading-secondary {
