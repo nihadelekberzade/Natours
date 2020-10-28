@@ -38,7 +38,7 @@
   &__content {
     @include absCenter;
     transform: translate(-50%, -50%) scale(0.25);
-    width: 75%;
+    width: 85%;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, $alpha: 0.2);
     border-radius: 3px;
