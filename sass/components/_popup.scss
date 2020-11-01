@@ -10,6 +10,13 @@
   opacity: 0;
   visibility: hidden;
 
+  @supports (-webkit-backdrop-filter: blur(1rem)) or
+    (backdrop-filter: blur(1rem)) {
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    background-color: rgba($color-black, $alpha: 0.3);
+  }
+
   &:target {
     opacity: 1;
     visibility: visible;
@@ -48,7 +55,6 @@
     opacity: 0;
     transition: all 0.5s 0.2s;
   }
-
   &__left {
     width: 33.333333%;
     display: table-cell;

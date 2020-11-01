@@ -9,6 +9,7 @@
     left: 0;
     width: 100%;
     height: 52rem;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
@@ -184,7 +185,7 @@
     }
 
     &__details {
-      padding: 0 1rem;
+      padding: 1rem 3rem;
     }
 
     &__cta {
@@ -200,7 +201,7 @@
     }
 
     &__price-value {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
 }
