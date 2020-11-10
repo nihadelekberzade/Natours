@@ -34,6 +34,11 @@ body {
     padding: 0;
   }
 }
+::selection {
+  background: $color-primary;
+  color: $color-white;
+}
+
 a {
   color: inherit;
   display: inline-block;
